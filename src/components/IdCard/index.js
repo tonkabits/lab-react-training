@@ -8,7 +8,7 @@ const joinName = (firstName, lastName) => {
 const IdCard = (props) => {
     return (
         <>
-           <div className="w-1/3 h-48 p-2">
+           <div className="w-1/3 p-2">
                <div className="rounded-lg bg-gray-100">
                 <div className="rounded">
                     <img src={props.picture} alt="any" className="w-full rounded-lg"/> 

@@ -13,9 +13,43 @@ import ClickablePicture from './components/ClickablePicture';
 import Dice from './components/Dice';
 import Carousel from './components/Carousel';
 import NumbersTable from './components/NumbersTable';
+import Facebook from './components/Facebook';
+
+
 function App() {
   return (
     <div className="App">
+      <h2 className="text-2xl">
+        Iteration 1
+      </h2>
+      <div className="p-12 m-auto flex flex-wrap">
+        <IdCard
+          lastName="Delores"
+          firstName="Obrien"
+          gender="female"
+          height={172}
+          // birth={new Date("1988-05-11")}
+          picture="https://randomuser.me/api/portraits/women/44.jpg"
+        />
+        <IdCard
+          lastName='Doe'
+          firstName='John'
+          gender='male'
+          height={178}
+          // birth={new Date("1992-07-14")}
+          picture="https://randomuser.me/api/portraits/men/44.jpg"
+
+        />
+        <IdCard
+          lastName='Annie'
+          firstName='Juan'
+          gender='female'
+          height={178}
+          // birth={new Date("1992-07-14")}
+          picture="https://randomuser.me/api/portraits/women/26.jpg"
+
+        />
+      </div>
       <div className="">
         <h2 className="text-2xl">
           Iteration 2
@@ -157,42 +191,20 @@ function App() {
       <h2 className="text-2xl">
         Iteration 12
       </h2>
-      <div className="p-12 m-auto flex flex-wrap">
-        <div className="flex m-auto">
+      <div className="p-12 m-auto flex flex-wrap mb-64">
+        <div className="flex w-full h-64">
           <NumbersTable limit={12}/>
         </div>
       </div>
       <h2 className="text-2xl">
-        Iteration 1
+        Iteration 13 Facebook (simple)
       </h2>
-      <div className="container p-12 m-auto flex flex-wrap">
-        <IdCard 
-          lastName="Delores"
-          firstName="Obrien"
-          gender="female"
-          height={172}
-          // birth={new Date("1988-05-11")}
-          picture="https://randomuser.me/api/portraits/women/44.jpg"
-        />
-        <IdCard 
-          lastName='Doe'
-          firstName='John'
-          gender='male'
-          height={178}
-          // birth={new Date("1992-07-14")}
-          picture="https://randomuser.me/api/portraits/men/44.jpg"
-        
-        />
-        <IdCard
-          lastName='Annie'
-          firstName='Juan'
-          gender='female'
-          height={178}
-          // birth={new Date("1992-07-14")}
-          picture="https://randomuser.me/api/portraits/women/26.jpg"
-        
-        />
+      <div className="p-12 m-auto flex flex-wrap mb-64">
+        <div className="flex w-full h-64">
+          <Facebook />
+        </div>
       </div>
+  
 
     </div>
   );
