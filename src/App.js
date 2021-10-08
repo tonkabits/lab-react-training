@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import './index.css';
 import IdCard from './components/IdCard';
@@ -8,6 +8,11 @@ import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
+import LikeButton from './components/LikeButton';
+import ClickablePicture from './components/ClickablePicture';
+import Dice from './components/Dice';
+import Carousel from './components/Carousel';
+import NumbersTable from './components/NumbersTable';
 function App() {
   return (
     <div className="App">
@@ -84,7 +89,7 @@ function App() {
           Iteration 7
         </h2>
       <div className="p-12 m-auto flex flex-wrap">
-        <div className="flex min-w-full">
+        <div className="flex m-auto">
 
           <DriverCard 
             name="Travis Kalanick"
@@ -106,7 +111,56 @@ function App() {
             }} />
   
         </div>
-    
+      </div>
+      <h2 className="text-2xl">
+        Iteration 8
+      </h2>
+      <div className="p-12 m-auto flex flex-wrap">
+        <div className="flex m-auto">
+            <LikeButton />
+            <LikeButton />
+        </div>
+      </div>
+      <h2 className="text-2xl">
+        Iteration 9
+      </h2>
+      <div className="p-12 m-auto flex flex-wrap">
+        <div className="flex m-auto">
+        <ClickablePicture />
+        </div>
+      </div>
+      <h2 className="text-2xl">
+        Iteration 10
+      </h2>
+      <div className="p-12 m-auto flex flex-wrap">
+        <div className="flex m-auto">
+        <Dice />
+        </div>
+      </div>
+      <h2 className="text-2xl">
+        Iteration 11
+      </h2>
+      <div className="p-12 m-auto flex flex-wrap">
+        <div className="flex m-auto">
+            <Carousel 
+            imgs={[
+              'https://randomuser.me/api/portraits/women/1.jpg',
+              'https://randomuser.me/api/portraits/men/1.jpg',
+              'https://randomuser.me/api/portraits/women/2.jpg',
+              'https://randomuser.me/api/portraits/men/2.jpg'
+            ]}
+            
+            
+            />
+        </div>
+      </div>
+      <h2 className="text-2xl">
+        Iteration 12
+      </h2>
+      <div className="p-12 m-auto flex flex-wrap">
+        <div className="flex m-auto">
+          <NumbersTable limit={12}/>
+        </div>
       </div>
       <h2 className="text-2xl">
         Iteration 1

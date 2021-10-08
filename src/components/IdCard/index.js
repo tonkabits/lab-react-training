@@ -51,7 +51,7 @@ const IdCard = (props) => {
                         Birth
                         </label>
                         <p className=" ml-2"> 
-                            {props.birth}
+                            {/* {props.birth.toDateString()} */}
                         </p>
                     </div>
                     <CreditCard 

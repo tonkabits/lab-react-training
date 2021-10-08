@@ -1,7 +1,7 @@
 import React from "react";
 
     const maskNumber = (number) => {
-        return '•••• •••• ••••' + number.slice(-4)
+        return '•••• •••• •••• ' + number.slice(-4)
     }
 
     const CreditCard = (props) => {
