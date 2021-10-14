@@ -14,6 +14,8 @@ import Dice from './components/Dice';
 import Carousel from './components/Carousel';
 import NumbersTable from './components/NumbersTable';
 import Facebook from './components/Facebook';
+import SignUp from './components/SignUp';
+import RGBColorPicker from './components/RGBColorPicker';
 
 
 function App() {
@@ -197,6 +199,23 @@ function App() {
         </div>
       </div>
       <h2 className="text-2xl">
+        Iteration 15 SignUp
+      </h2>
+      <div className="p-12 m-auto flex justify-center flex-wrap mb-64">
+        
+          <SignUp />
+        
+      </div>
+      <h2 className="text-2xl">
+        Iteration 16 RGBColorPicker
+      </h2>
+      <div className="p-12 m-auto flex justify-center flex-wrap mb-64">
+        
+          <RGBColorPicker/>
+        
+      </div>
+
+      <h2 className="text-2xl">
         Iteration 13 Facebook (simple)
       </h2>
       <div className="p-12 m-auto flex flex-wrap mb-64">
@@ -205,6 +224,7 @@ function App() {
         </div>
       </div>
   
+    
 
     </div>
   );
